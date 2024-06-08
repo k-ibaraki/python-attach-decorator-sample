@@ -1,4 +1,4 @@
-from typing import Any, Callable
+from typing import Any
 import flet as ft
 from src.decorators.auth import auth_dummy
 from src.decorators.attach_decorator import attach_decorator
