@@ -1,5 +1,7 @@
-from typing import Any
+from typing import Any, Callable
 import flet as ft
+from src.decorators.auth import auth_dummy
+from src.decorators.attach_decorator import attach_decorator
 
 
 def main(page: ft.Page) -> None:
@@ -28,6 +30,7 @@ def main(page: ft.Page) -> None:
     )
 
 
+@attach_decorator(auth_dummy, is_attached=False)
 def run() -> None:
     ft.app(main)
 
